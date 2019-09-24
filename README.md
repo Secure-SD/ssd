@@ -1,7 +1,7 @@
 ## How to Access LinkedIn API and Retrieve User Information Using OAuth 2.0(Member Authorization)
 
 ## Install and Run the application
-
+go to root directory and,
   1. npm install 
   2. npm install passport-linkedin-oauth2
 
