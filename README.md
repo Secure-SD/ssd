@@ -2,8 +2,8 @@
 
 ## Install and Run the application
 
-  npm install 
-  npm install passport-linkedin-oauth2
+  1. npm install 
+  2. npm install passport-linkedin-oauth2
 
 ## Usage
 1. Click on login with LinkedIn
