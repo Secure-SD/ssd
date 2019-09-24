@@ -1,0 +1,31 @@
+{
+  "name": "linkedin",
+  "version": "1.0.0",
+  "description": "Get LinkedIn data via oauth",
+  "main": "./server.js",
+  "scripts": {
+    "test": "mocha -t 5000"
+  },
+  "devDependencies": {
+    "ejs": "^2.6.1",
+    "express": "^3.x.x",
+    "mocha": "*",
+    "morgan": "^1.9.1",
+    "nock": "^10.0.5",
+    "passport": "^0.4.0",
+    "should": "^13.2.3"
+  },
+  "keywords": [
+    "passport",
+    "linkedin",
+    "auth0"
+  ],
+  "author": "IT16154490",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "nodemon": "^1.19.2",
+    "passport-linkedin-oauth2": "^2.0.0",
+    "passport-oauth2": "1.x.x"
+  }
+}

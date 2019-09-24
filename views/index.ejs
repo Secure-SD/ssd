@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Linkedin</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/762926684c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<% if (!user) { %>
+		<div class="container" style="margin-top: 20%">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<h2>Welcome! Please log in.</h2>
+						<a class="btn btn-info btn-lg" role="button" href="/auth/linkedin">Login with Linkedin <i class="fab fa-linkedin fa-1x"></i></a>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</div>
+	<% } else { %>
+		<div class="jumbotron" style="margin: 10px">
+			<div style="padding: 10px">
+				<h2>Hello, <%= user.displayName %>.</h2>
+				<img src="<%= user.photos[0].value %>" alt="">
+				<p>email: <%= user.emails[0].value %> </p>
+				<a class="btn btn-info btn-lg" role="button" href="/companies">Login with Linkedin <i class="fab fa-linkedin fa-1x"></i></a>
+			</div>
+		</div>
+		
+		<!-- <ul>
+			<% user.photos.forEach(function(email) { %>
+				<li><img src="<%= email.value %>" alt=""></li>
+			<% }); %>
+		</ul> -->
+		<!-- <pre><code><%= JSON.stringify(user, null, 2) %></code></pre> -->
+	<% } %>
+</body>
+</html>
